@@ -1,0 +1,60 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 3rem;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* :nth child selectors - select elements based on their position as a child in any parent container  */
+section:first-child {
+    background-color: crimson;
+}
+
+section:nth-child(2) {
+    background-color: tomato;
+}
+
+section:nth-child(3) {
+    background-color: khaki;
+}
+
+section:nth-child(4) {
+    background-color: lightgreen;
+}
+
+/* section:nth-child(5) {
+    background-color: lightseagreen;
+} */
+
+section:nth-last-child(2) {
+    background-color: lightseagreen;
+}
+
+section:last-child {
+    background-color: steelblue;
+}
+
+section:only-child {
+    background-color: darkslategrey;
+}
+
+/* nth of type selectors - select elements based on their position as a child of that type  */
+p:first-of-type {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px gainsboro;
+}
+
+p:last-of-type {
+    font-size: 0.75rem;
+}
+
+p:nth-of-type(2) {
+    display: none;
+}
